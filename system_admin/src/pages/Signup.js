@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 
 const Signup = () => {
   const [formdata, setFormdata] = useState({
@@ -135,9 +135,9 @@ const Signup = () => {
 
         <p className="mt-3 text-center small">
           Already have an account?{" "}
-          <a href="#" className="text-primary fw-bold">
-            Login
-          </a>
+         <Link to="/" className="text-primary fw-bold">
+    Login
+  </Link>
         </p>
       </div>
     </div>

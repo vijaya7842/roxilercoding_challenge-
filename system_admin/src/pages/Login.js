@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link} from 'react-router-dom';
 import {jwtDecode} from 'jwt-decode';
 
 const Login = () => {
@@ -160,11 +160,11 @@ const Login = () => {
           <hr className="flex-grow-1" />
         </div>
 
-        <button className="btn btn-outline-secondary w-100 mb-3">Sign in with other</button>
+        
 
         <p className="mt-3 text-center small">
           Don’t have an account?{" "}
-          <a href="#" className="text-primary fw-bold">Sign Up</a>
+           <Link to="/signup" className="text-primary fw-bold">Sign Up</Link>
         </p>
       </div>
     </div>
